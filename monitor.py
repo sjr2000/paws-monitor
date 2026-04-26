@@ -12,6 +12,8 @@ from email.mime.text import MIMEText
 from pathlib import Path
 
 import os
+import subprocess
+subprocess.run(["playwright", "install", "chromium", "--with-deps"], check=False)
 import anthropic
 from playwright.async_api import async_playwright
 
