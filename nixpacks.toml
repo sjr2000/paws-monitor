@@ -1,5 +1,5 @@
 [phases.install]
-cmds = ["pip install -r requirements.txt", "playwright install chromium --with-deps"]
+cmds = ["pip install -r requirements.txt"]
 
 [start]
-cmd = "python monitor.py"
+cmd = "bash monitor_start.sh"
